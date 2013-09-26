@@ -108,6 +108,8 @@ inoremap jk <Esc>
 
 " In visual mode, use Y to copy to system clipboard
 vnoremap Y "*y
+
+" Also do that in normal mode
 nnoremap Y "*yy
 
 " Switch colon and semicolon for faster commanding
