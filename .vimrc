@@ -50,12 +50,13 @@ set incsearch
 set hlsearch
 
 " Highlight search results even when we're on the same line
-hi Search term=none cterm=none ctermbg=169 ctermfg=125 
+hi Search term=none cterm=none ctermbg=199 ctermfg=125 
+hi IncSearch term=none cterm=none ctermbg=199 ctermfg=125 
 
 " Only wrap lines at characters in `breakat`
 set linebreak
 
-"  We like the cursor
+" Where are we in the file? Show us in the status line.
 set ruler
 
 " Highlight the line the cursor's on
@@ -83,14 +84,18 @@ endif
 " Recognize file types; indent stuff
 filetype plugin indent on
 
-augroup vimrcEx
-au!
+" Set up an autocommand group
+augroup yo_settings
+" Clear the group
+autocmd!
 
 " Try to have the cursor where we last had it in this file
 autocmd BufReadPost *
   \ if line("'\"") > 1 && line("'\"") <= line("$") |
-  \   exe "normal! g`\"" |
+  \   execute "normal! g`\"" |
   \ endif
+
+" End the group
 augroup END
 
 " If we're in a Vimscript file...
