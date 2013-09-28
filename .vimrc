@@ -52,8 +52,8 @@ set hlsearch
 " Highlight search results even when we're on the same line
 " (Note: This is specific to our color scheme, and probably
 " should be part of it.)
-hi Search term=none cterm=none ctermbg=199 ctermfg=125 
-hi IncSearch term=none cterm=none ctermbg=199 ctermfg=125 
+highlight Search term=none cterm=none ctermbg=199 ctermfg=125 
+highlight IncSearch term=none cterm=none ctermbg=199 ctermfg=125 
 
 " Only wrap lines at characters in `breakat`
 set linebreak
@@ -67,8 +67,8 @@ set cursorline
 " Set the highlight colors for that line
 " (Note: This is also specific to our color scheme, and
 " probably should be part of it.)
-hi CursorLine term=none cterm=none ctermbg=125 ctermfg=169
-hi Visual term=none cterm=none ctermbg=125 ctermfg=169
+highlight CursorLine term=none cterm=none ctermbg=125 ctermfg=169
+highlight Visual term=none cterm=none ctermbg=125 ctermfg=169
 
 " Tabs are two spaces; indent by two spaces
 set tabstop=2 shiftwidth=2
