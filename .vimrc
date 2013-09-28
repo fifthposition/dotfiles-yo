@@ -50,6 +50,8 @@ set incsearch
 set hlsearch
 
 " Highlight search results even when we're on the same line
+" (Note: This is specific to our color scheme, and probably
+" should be part of it.)
 hi Search term=none cterm=none ctermbg=199 ctermfg=125 
 hi IncSearch term=none cterm=none ctermbg=199 ctermfg=125 
 
