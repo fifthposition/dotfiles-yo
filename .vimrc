@@ -65,6 +65,8 @@ set ruler
 set cursorline
 
 " Set the highlight colors for that line
+" (Note: This is also specific to our color scheme, and
+" probably should be part of it.)
 hi CursorLine term=none cterm=none ctermbg=125 ctermfg=169
 hi Visual term=none cterm=none ctermbg=125 ctermfg=169
 
