@@ -122,7 +122,7 @@ augroup END
 
 " }}}
 
-" Re-mappings ---------------------- {{{
+" Re-mappings and commands ---------------------- {{{
 
 " Use jk as escape sequence so we can avoid the distant <Esc> key
 inoremap jk <Esc>
@@ -139,6 +139,9 @@ vnoremap <leader>d "_d
 " Switch colon and semicolon for faster commanding
 nnoremap ; :
 nnoremap : ;
+
+" Allow save-and-quit via accidental :ew
+cabbrev ew :wq
 
 " <leader>ev opens this file in a new vsplit to the right
 nnoremap <leader>ev :vs<cr><c-w>l:e$MYVIMRC<cr>
