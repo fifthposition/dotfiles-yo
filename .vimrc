@@ -1,18 +1,17 @@
 
-" Overall settings of settificationness ---------------------- {{{
-
-" Do not worry about vi compatibility
-set nocompatible
+" Vundle! ---------------------------------------------------- {{{
 
 " Briefly turn off file type recognition
 filetype off
 
 " Use Vundle
-set rtp+=~/.vim/bundle/vundle/
+set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" We find that it helps to install Vundle itself
 Bundle 'gmarik/vundle'
 
+" Also use these other plugins
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'vim-scripts/CursorLineCurrentWindow'
 Bundle 'fifthposition/columcille'
@@ -21,6 +20,13 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/TwitVim'
+"
+" }}}
+
+" Overall settings of settificationness ---------------------- {{{
+
+" Do not worry about vi compatibility
+set nocompatible
 
 " Recognize file types; indent stuff
 filetype plugin indent on
@@ -107,7 +113,7 @@ endif
 
 " }}}
 
-" File settings ---------------------- {{{
+" File settings ---------------------------------------------- {{{
 
 " Set up an autocommand group
 augroup yo_settings
@@ -131,7 +137,7 @@ augroup END
 
 " }}}
 
-" Re-mappings and commands ---------------------- {{{
+" Re-mappings and commands ----------------------------------- {{{
 
 " Use jk as escape sequence so we can avoid the distant <Esc> key
 inoremap jk <Esc>
