@@ -133,6 +133,9 @@ vnoremap Y "*y
 " Also do that in normal mode
 nnoremap Y "*yy
 
+" Use <leader>d in visual mode to delete without yanking
+vnoremap <leader>d "_d
+
 " Switch colon and semicolon for faster commanding
 nnoremap ; :
 nnoremap : ;
