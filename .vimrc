@@ -15,12 +15,8 @@ Bundle 'gmarik/vundle'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'vim-scripts/CursorLineCurrentWindow'
 Bundle 'fifthposition/columcille'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'msanders/snipmate.vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/TwitVim'
-"
+
 " }}}
 
 " Overall settings of settificationness ---------------------- {{{
