@@ -73,6 +73,9 @@ set linebreak
 " Where are we in the file? Show us in the status line.
 set ruler
 
+" BTW always show the status line
+set laststatus=2
+
 " Highlight the line the cursor's on
 set cursorline
 
