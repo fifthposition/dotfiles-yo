@@ -4,6 +4,18 @@
 " Do not worry about vi compatibility
 set nocompatible
 
+" Briefly turn off file type recognition
+filetype off
+
+" Use Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+" Recognize file types; indent stuff
+filetype plugin indent on
+
 " Use 256 colors; we have them
 set t_Co=256
 
@@ -85,9 +97,6 @@ endif
 
 " File settings ---------------------- {{{
 
-" Recognize file types; indent stuff
-filetype plugin indent on
-
 " Set up an autocommand group
 augroup yo_settings
 " Clear the group
@@ -136,13 +145,6 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <right> <nop>
 inoremap <left> <nop>
-
-" }}}
-
-" Stuff that comes last ---------------------- {{{
-
-" Use Pathogen
-call pathogen#infect()
 
 " }}}
 
