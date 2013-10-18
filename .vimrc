@@ -140,6 +140,12 @@ vnoremap <leader>d "_d
 nnoremap ; :
 nnoremap : ;
 
+" Eliminate need for w in moving to other windows
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+noremap <C-h> <C-w>h
+
 " Allow save-and-quit via accidental :ew
 cabbrev ew :wq
 
