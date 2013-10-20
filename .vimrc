@@ -42,6 +42,9 @@ let maplocalleader="\\"
 " Characters we use for window (etc.) separators
 set fillchars=stl:-,stlnc:-,vert:│
 
+" Highlight the 81st column
+set colorcolumn=81
+
 " Turn on syntax highlighting
 syntax on
 
