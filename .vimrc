@@ -148,6 +148,10 @@ vnoremap <leader>d "_d
 nnoremap ; :
 nnoremap : ;
 
+" Switch `v` and `V`, because we usually want linewise visual
+nnoremap v V
+nnoremap V v
+
 " Eliminate need for w in moving to other windows
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
