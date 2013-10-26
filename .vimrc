@@ -66,8 +66,8 @@ set history=50
 " Jump to first search result
 set incsearch		
 
-" Highlight the last search
-set hlsearch
+" Do not highlight the last search
+set nohlsearch
 
 " Highlight search results even when we're on the same line
 " (Note: This is specific to our color scheme, and probably
