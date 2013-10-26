@@ -21,9 +21,6 @@ Bundle 'vim-scripts/TwitVim'
 
 " Overall settings of settificationness ---------------------- {{{
 
-" Do not worry about vi compatibility
-set nocompatible
-
 " Recognize file types; indent stuff
 filetype plugin indent on
 
@@ -59,9 +56,6 @@ set nowritebackup
 
 " Don't use swap files
 set noswapfile
-
-" When we enter `%%`, expand that to the current file's full path
-cabbr <expr> %% expand('%:p:h')
 
 " Show incomplete commands as we're typing them
 set showcmd
