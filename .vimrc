@@ -132,8 +132,9 @@ augroup END
 
 " Re-mappings and commands ----------------------------------- {{{
 
-" Use jk as escape sequence so we can avoid the distant <Esc> key
-inoremap jk <Esc>
+" Use jk as escape sequence so we can avoid the distant <Esc>
+" key; also, save when we enter jk
+inoremap jk <Esc>:w<cr>
 
 " In visual mode, use Y to copy to system clipboard
 vnoremap Y "*y
