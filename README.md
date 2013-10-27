@@ -1,5 +1,5 @@
-Me dotfiles
+Dotfiles
 ===========
 
-I don't seem to use much of anything other than a `.vimrc` right now, actually.
+Mostly I seem to just use a `.bash_profile` and `.vimrc` for the most part right now, mostly.
 
