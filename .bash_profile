@@ -11,7 +11,7 @@ export JAVA_OPTS='-Xms128m -Xmx2048m -XX:MaxPermSize=512m -server'
 clear && fortune | $(ls /usr/local/bin/cow* | gshuf -n1) -n -f $(ls /usr/local/Cellar/cowsay/3.03/share/cows/ | gshuf -n1)
 
 # "Save The Keystrokes, Save The Planet"(TM)
-alias gra="grails clean && grails run-app"
+alias gra="grails clean && grails compile && grails run-app"
 
 # Allow for Misspellings
 alias gti=git
