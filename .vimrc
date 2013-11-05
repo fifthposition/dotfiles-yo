@@ -143,10 +143,12 @@ fun! s:MaybeSave()
   endif
 endfun
 inoremap jk <Esc>:call <SID>MaybeSave()<cr>
-"inoremap jk <Esc>:w<cr>
 
 " In visual mode, use Y to copy to system clipboard
 vnoremap Y "*y
+
+" In normal mode, do the same with the current line
+nnoremap Y "*yy
 
 " Use <leader>d in normal mode to delete a line without yanking
 nnoremap <leader>d "_dd
