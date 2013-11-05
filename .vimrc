@@ -153,6 +153,9 @@ nnoremap : ;
 nnoremap v V
 nnoremap V v
 
+" Print the current file's path with Ctrl+p
+noremap <c-p> :pwd<cr>
+
 " Eliminate need for w in moving to other windows
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
