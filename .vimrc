@@ -40,7 +40,8 @@ let maplocalleader="\\"
 set fillchars=stl:-,stlnc:-,vert:│
 
 " Highlight the 81st column
-set colorcolumn=81
+" call matchadd('ColorColumn', '\%81v', 100)
+" set colorcolumn=81
 
 " Turn on syntax highlighting
 syntax on
