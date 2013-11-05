@@ -135,7 +135,15 @@ augroup END
 
 " Use jk as escape sequence so we can avoid the distant <Esc>
 " key; also, save when we enter jk
-inoremap jk <Esc>:w<cr>
+fun! s:MaybeSave()
+  if(strlen(@%) > 0)
+    write
+  else
+    redraw!
+  endif
+endfun
+inoremap jk <Esc>:call <SID>MaybeSave()<cr>
+"inoremap jk <Esc>:w<cr>
 
 " In visual mode, use Y to copy to system clipboard
 vnoremap Y "*y
