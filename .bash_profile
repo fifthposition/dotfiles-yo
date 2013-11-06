@@ -19,6 +19,7 @@ alias gra="grails clean && grails compile && grails run-app"
 # Allow for Misspellings
 alias gti=git
 alias bim=vim
+alias vmi=vim
 
 # Set up GVM
 [[ -s "/Users/ebenezer/.gvm/bin/gvm-init.sh" && -z $(which gvm-init.sh | grep '/gvm-init.sh') ]] && source "/Users/ebenezer/.gvm/bin/gvm-init.sh"
