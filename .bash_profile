@@ -21,6 +21,7 @@ alias gti=git
 alias bim=vim
 alias vmi=vim
 
-# Set up GVM
-[[ -s "/Users/ebenezer/.gvm/bin/gvm-init.sh" && -z $(which gvm-init.sh | grep '/gvm-init.sh') ]] && source "/Users/ebenezer/.gvm/bin/gvm-init.sh"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/ebenezer/.gvm/bin/gvm-init.sh" ]] && source "/Users/ebenezer/.gvm/bin/gvm-init.sh"
