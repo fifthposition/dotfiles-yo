@@ -108,10 +108,10 @@ endif
 
 " }}}
 
-" File settings ---------------------------------------------- {{{
+" File settings and autocommands ---------------------------- {{{
 
 " Set up an autocommand group
-augroup yo_settings
+augroup yo_settings_etc
 " Clear the group
 autocmd!
 
@@ -119,6 +119,11 @@ autocmd!
 autocmd BufReadPost *
   \ if line("'\"") > 1 && line("'\"") <= line("$") |
   \   execute "normal! g`\"" |
+  \ endif
+
+autocmd InsertLeave *
+  \ if expand("%") != "" |
+  \   update |
   \ endif
 
 " End the group
