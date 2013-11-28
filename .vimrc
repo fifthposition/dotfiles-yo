@@ -139,16 +139,11 @@ augroup END
 
 " Re-mappings and commands ----------------------------------- {{{
 
-" Use jk as escape sequence so we can avoid the distant <Esc>
-" key; also, save when we enter jk
-fun! s:MaybeSave()
-  if(strlen(@%) > 0)
-    write
-  else
-    redraw!
-  endif
-endfun
-inoremap jk <Esc>:call <SID>MaybeSave()<cr>
+" Use jk as escape sequence so we can avoid the distant <Esc> key
+inoremap jk <Esc>
+
+" Use jj in insert mode to escape and quit
+inoremap jj <Esc>:q!<cr>
 
 " In visual mode, use Y to copy to system clipboard
 vnoremap Y "*y
