@@ -16,6 +16,7 @@ Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 Bundle 'vim-scripts/CursorLineCurrentWindow'
 Bundle 'fifthposition/columcille'
 Bundle 'vim-scripts/TwitVim'
+Bundle 'mileszs/ack.vim'
 
 " }}}
 
