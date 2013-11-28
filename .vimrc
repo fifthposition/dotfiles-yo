@@ -153,7 +153,7 @@ nnoremap Y "*yy
 
 " Use <leader>d in normal mode to delete a line without yanking
 nnoremap <leader>d "_dd
-"
+
 " Use it in visual mode to delete selection without yanking
 vnoremap <leader>d "_d
 
@@ -174,8 +174,9 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 noremap <C-h> <C-w>h
 
-" Allow save-and-quit via accidental :ew
+" Allow save-and-quit even if we mistype :wq
 cabbrev ew :wq
+cabbrev qw :wq
 
 " <leader>ev opens this file in a new vsplit to the right
 nnoremap <leader>ev :vs<cr><c-w>l:e$MYVIMRC<cr>
